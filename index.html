@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Krusha SR - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Three.js and Vanta.js for animated background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Vanta Animated Background -->
+  <div class="background-section" aria-hidden="true"></div>
+
+  <!-- Slides Wrapper -->
+  <div class="slides-container" aria-live="polite">
+    <!-- Slide 1: About -->
+    <section class="slide active" id="slide-1" tabindex="0" aria-label="Personal Details">
+      <h1>About</h1><button id="download-resume-btn" onclick="downloadResume()"><i class="fa fa-download"></i> Download Resume</button>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Krusha SR</h2>
+          <p class="highlight">Software Developer</p>
+          <p style="text-align:justify;">Hi, I’m Krusha SR. I enjoy working with AI and computer vision, building projects like face recognition and emotion detection using Python and OpenCV. I’m currently pursuing my B.Tech in Information Technology and love learning new technologies to create useful solutions.</p>
+          <div class="social-links">
+            <a href="https://github.com/Krusharaguraman" target="_blank" aria-label="GitHub Profile" title="Visit Krusha's GitHub"><i class="fab fa-github"></i></a>
+            <!-- Added Instagram Link -->
+            <a href="https://www.instagram.com/krusharaguraman/" target="_blank" aria-label="Instagram Profile" title="Visit Krusha's Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <img src="./sample.png" alt="Krusha SR portrait" class="profile-img" />
+      </div>
+    </section>
+
+    <!-- Slide 2: Technical Skills -->
+    <section class="slide" id="slide-2" tabindex="0" aria-label="Technical Skills">
+      <h1>Technical Skills</h1>
+      <div class="skills-container">
+        <div class="skills-row">
+          <div class="skill-card"><span class="skill-icon">🐍</span><div>Python</div></div>
+          <div class="skill-card"><span class="skill-icon">☕</span><div>Java</div></div>
+          <div class="skill-card"><span class="skill-icon">🌐</span><div>HTML, CSS, JS</div></div>
+          <div class="skill-card"><span class="skill-icon">📷</span><div>OpenCV</div></div>
+        </div>
+        <div class="skills-row bottom">
+          <div class="skill-card"><span class="skill-icon">🤳</span><div>DeepFace</div></div>
+          <div class="skill-card"><span class="skill-icon">🦁</span><div>YOLOv5</div></div>
+          <div class="skill-card"><span class="skill-icon">🔗</span><div>Git & GitHub</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-3" tabindex="0" aria-label="Education">
+      <h1>Education</h1>
+      <div class="education-timeline">
+        <!-- B.Tech Timeline Item -->
+        <div class="timeline-item">
+          <div class="timeline-year">2022 - 2026</div>
+          <div class="timeline-content">
+            <h3>B.Tech – Information Technology</h3>
+            <p><i>Saranathan College of Engineering</i></p>
+            <p>CGPA: 8.057/10 (up to 6th semester)</p>
+          </div>
+        </div>
+
+        <!-- Higher Secondary Timeline Item -->
+        <div class="timeline-item">
+          <div class="timeline-year">2021 - 2022</div>
+          <div class="timeline-content">
+            <h3>Higher Secondary (12th)</h3>
+            <p><i>A.K.K.V Aarunadu Matric Higher Secondary School</i></p>
+            <p>Percentage: 78.67%</p>
+          </div>
+        </div>
+
+        <!-- Secondary Timeline Item -->
+        <div class="timeline-item">
+          <div class="timeline-year">2019 - 2020</div>
+          <div class="timeline-content">
+            <h3>Secondary (10th)</h3>
+            <p><i>A.K.K.V Aarunadu Matric Higher Secondary School</i></p>
+            <p>Percentage: 88.4%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Slide 4: Projects -->
+    <section class="slide" id="slide-4" tabindex="0" aria-label="Projects">
+      <h1>Projects</h1>
+      <div class="projects-list">
+        <div class="project-card">
+          <img src="./emotion.jpg" alt="Emotion Greetings Preview" class="project-preview">
+          <b>Emotion Driven Greetings</b>
+          <p>Delivers personalized motivational messages based on detected emotions.</p>
+          <a href="https://github.com/Krusharaguraman/Emotion-Driven-Greetings" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="./age_emotion.jpg" alt="Emotion Detection Preview" class="project-preview">
+          <b>Real-Time Age & Emotion Detection</b>
+          <p>Webcam-based age and emotion detection with interactive UI overlays.</p>
+          <a href="https://github.com/Krusharaguraman/Emotion-Driven-Greetings" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="./access_control.jpg" alt="Access Control Preview" class="project-preview">
+          <b>Emotion-Based Access Control</b>
+          <p>Facial emotion analysis for secure and behavioral access control.</p>
+          <a href="https://github.com/Krusharaguraman/AccessControl" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="./ai_story_teller.png" alt="AI Storyteller Preview" class="project-preview">
+          <b>AI Storyteller</b>
+          <p>Generates creative stories using AI, tailored to user inputs and preferences.</p>
+          <a href="https://github.com/Krusharaguraman/AI-Storyteller" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="./attendance_system.png" alt="Face Recognition System Preview" class="project-preview">
+          <b>Face Recognition-Based Attendance System</b>
+          <p>Real-time attendance tracking using DeepFace and OpenCV with automated logging.</p>
+          <a href="https://github.com/Krusharaguraman/Face-Recognition-Based-Attendance-System" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="./object_detection.jpg" alt="Object Detection Preview" class="project-preview">
+          <b>Real-Time Object Detection</b>
+          <p>Scalable multi-class object detection using YOLOv5 and OpenCV.</p>
+          <a href="https://github.com/Krusharaguraman/VirtualObjectDetection" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 5: Contact & Review -->
+    <section class="slide" id="slide-5" tabindex="0" aria-label="Contact and Review">
+      <h1>Contact & Review</h1>
+      <div class="contact-section">
+        <p><a href="mailto:krusharaguraman@gmail.com">krusharaguraman@gmail.com</a></p>
+        <p>+91 63746 18785</p>
+        <p>Trichy, India</p>
+        <div class="social-links">
+          <a href="https://github.com/Krusharaguraman" target="_blank" aria-label="GitHub Profile" title="Visit Krusha's GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/krusharaguraman/" target="_blank" aria-label="Instagram Profile" title="Visit Krusha's Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <hr style="margin:20px 0; border-color: rgba(255, 255, 255, 0.1);">
+        <h2>Leave a Review</h2>
+        <textarea rows="4" placeholder="Share your feedback..." aria-label="Your feedback"></textarea>
+        <button type="button">Submit Review</button>
+      </div>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-btns" role="toolbar" aria-label="Slide navigation">
+      <button onclick="showSlide(1)" id="nav-btn-1" class="focused" aria-label="Show About Section" aria-pressed="true">About</button>
+      <button onclick="showSlide(2)" id="nav-btn-2" aria-label="Show Skills Section" aria-pressed="false">Skills</button>
+      <button onclick="showSlide(3)" id="nav-btn-3" aria-label="Show Education Section" aria-pressed="false">Education</button>
+      <button onclick="showSlide(4)" id="nav-btn-4" aria-label="Show Projects Section" aria-pressed="false">Projects</button>
+      <button onclick="showSlide(5)" id="nav-btn-5" aria-label="Show Contact Section" aria-pressed="false">Contact</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="./script.js"></script>
+</body>
+</html>
